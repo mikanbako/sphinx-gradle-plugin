@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2015 Keita Kita
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+apply plugin: 'java-gradle-plugin'
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+
+group = 'com.github.mikanbako.gradle.sphinx'
+version = '0.1'
+archivesBaseName = 'sphinx-gradle-plugin'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    compile 'org.apache.commons:commons-lang3:3.4'
+}
+
