@@ -127,3 +127,29 @@ options | void        | String...       | Options for sphix-autobuild.
 This software is released under the MIT License.
 See LICENSE.txt for detail.
 
+# For developers
+
+## Installing to your local environment
+
+1. Install the plugin to local maven repository:
+
+ ```sh
+./gradlew install
+```
+
+2. Include the following in your build.gradle to build the documentation:
+
+ ```Gradle
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.github.mikanbako.gradle.sphinx:sphinx-gradle-plugin:0.1"
+    }
+}
+
+apply plugin: "com.github.mikanbako.gradle.sphinx"
+```
+
