@@ -16,7 +16,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath "com.github.mikanbako.gradle.sphinx:sphinx-gradle-plugin:0.1"
+        classpath "gradle.plugin.com.github.mikanbako.gradle.sphinx:sphinx-gradle-plugin:0.1"
     }
 }
 
