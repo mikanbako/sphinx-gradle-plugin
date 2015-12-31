@@ -48,6 +48,8 @@ tasks.
 [sphinx-autobuild](https://pypi.python.org/pypi/sphinx-autobuild) must be
 installed to run autobuild tasks.
 
+Default assumes that builder is "html" and build directory is "_build".
+
 # Configuration
 
 This plugin allows you to configure custom options for Sphinx and
