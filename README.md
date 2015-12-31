@@ -71,17 +71,17 @@ Sphinx configuration has the following properties and methods.
 
 ### Properties
 
-Name                        | Type                | Default value  | Description
-----------------------------|---------------------|----------------|---------------------------------------------------------------------------
-builder                     | String              | "html"         | Name of builder. The value is the same of the value of -b option on sphinx-build.
-sourceDir                   | Object              | "."            | Directory of source files. The value is evaluated by Project.file().
-buildDir                    | Object              | "_build"       | Directory of built documentation. The value is evaluated by Project.file().
-isWarningError              | boolean             | true           | When the value is true, the build is failed by warnings from sphinx-build.
-isProjectBuildDirOverrided  | boolean             | true           | When the value is true, Project.buildDir is set to the value of buildDir property.
-configurations              | Map<String, String> | empty          | Key and value paired configuration value set. The value is the same of the value of -D option on sphinx-build.
-options                     | Iterable<String>    | empty          | Other options for sphinx-build.
-warningsFilename            | String              | "warnings.txt" | Filename to write warnings from sphinx-build. The file is located on buildDir.
-command                     | String              | "sphinx-build" | Running command for sphinx-build.
+Name                        | Type                      | Default value  | Description
+----------------------------|---------------------------|----------------|---------------------------------------------------------------------------
+builder                     | String                    | "html"         | Name of builder. The value is the same of the value of -b option on sphinx-build.
+sourceDir                   | Object                    | "."            | Directory of source files. The value is evaluated by Project.file().
+buildDir                    | Object                    | "_build"       | Directory of built documentation. The value is evaluated by Project.file().
+isWarningError              | boolean                   | true           | When the value is true, the build is failed by warnings from sphinx-build.
+isProjectBuildDirOverrided  | boolean                   | true           | When the value is true, Project.buildDir is set to the value of buildDir property.
+configurations              | Map&lt;String, String&gt; | empty          | Key and value paired configuration value set. The value is the same of the value of -D option on sphinx-build.
+options                     | Iterable&lt;String&gt;    | empty          | Other options for sphinx-build.
+warningsFilename            | String                    | "warnings.txt" | Filename to write warnings from sphinx-build. The file is located on buildDir.
+command                     | String                    | "sphinx-build" | Running command for sphinx-build.
 
 ### Methods
 
@@ -104,12 +104,12 @@ sphinx-autobuild configuration has the following properties and methods.
 
 ### Properties
 
-Name    | Type             | Default value      | Description
---------|------------------|--------------------|-----------------------------------------------------
-host    | String           | "localhost"        | The host on which the documentation shall be served.
-port    | int              | 8000               | The port on which the documentation shall be served.
-options | Iterable<String> | empty              | Options for sphix-autobuild.
-command | String           | "sphinx-autobuild" | Running command for sphinx-autobuild.
+Name    | Type                   | Default value      | Description
+--------|------------------------|--------------------|-----------------------------------------------------
+host    | String                 | "localhost"        | The host on which the documentation shall be served.
+port    | int                    | 8000               | The port on which the documentation shall be served.
+options | Iterable&lt;String&gt; | empty              | Options for sphix-autobuild.
+command | String                 | "sphinx-autobuild" | Running command for sphinx-autobuild.
 
 Moreover, sphinx-autobuild configuration uses the following Sphinx
 configuration to run Sphinx.
