@@ -46,7 +46,7 @@ class SphinxPluginTest {
 
         Assert.assertEquals(
             configurationOptions.toString(), 1, configurationOptions.size())
-        Assert.assertEquals('-D"a"="b"', configurationOptions.get(0).toString())
+        Assert.assertEquals('-Da=b', configurationOptions.get(0).toString())
     }
 
     private static void assertCommandLineContains(Task task, String text) {
@@ -70,7 +70,7 @@ class SphinxPluginTest {
 
         assertCommandLineContains(buildTask, sourceDir.absolutePath)
         assertCommandLineContains(buildTask, buildDir.absolutePath)
-        assertCommandLineContains(buildTask, '-D"a"="b"')
+        assertCommandLineContains(buildTask, '-Da=b')
         assertCommandLineContains(buildTask, 'ddd')
     }
 

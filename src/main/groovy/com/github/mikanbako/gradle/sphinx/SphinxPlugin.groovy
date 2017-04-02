@@ -29,7 +29,7 @@ class SphinxPlugin implements Plugin<Project> {
     private static List<String> getSphinxConfigurationOptions(
             Project project) {
         return project.sphinx.configurations.collect {
-                key, value -> "-D\"${key}\"=\"${value}\""
+                key, value -> "-D${key}=${value}"
             }
     }
 
