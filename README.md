@@ -23,7 +23,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath "gradle.plugin.com.github.mikanbako.gradle.sphinx:sphinx-gradle-plugin:0.1"
+        classpath "gradle.plugin.com.github.mikanbako.gradle.sphinx:sphinx-gradle-plugin:0.2.0"
     }
 }
 
@@ -34,7 +34,7 @@ or
 
 ```Gradle
 plugins {
-    id "com.github.mikanbako.gradle.sphinx" version "0.1"
+    id "com.github.mikanbako.gradle.sphinx" version "0.2.0"
 }
 ```
 
@@ -158,7 +158,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.github.mikanbako.gradle.sphinx:sphinx-gradle-plugin:0.1"
+        classpath "com.github.mikanbako.gradle.sphinx:sphinx-gradle-plugin:0.2.0"
     }
 }
 

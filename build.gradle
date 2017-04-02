@@ -23,7 +23,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven'
 
 group = 'com.github.mikanbako.gradle.sphinx'
-version = '0.1'
+version = '0.2.0'
 archivesBaseName = 'sphinx-gradle-plugin'
 
 repositories {
