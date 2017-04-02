@@ -3,10 +3,17 @@
 Gradle plugin for [Sphinx](http://sphinx-doc.org/). This plugin adds tasks to
 build your Sphinx documentation.
 
-# Installing
+# How to use
 
-1. Create build.gradle into your source directory for Sphinx documentation.
-2. Include the following in your build script:
+1. Install [Sphinx](http://sphinx-doc.org/), [sphinx-autobuild](https://pypi.python.org/pypi/sphinx-autobuild) and create your Sphinx documentation.
+
+```sh
+pip install Sphinx sphinx-autobuild
+sphinx-quickstart
+```
+
+2. Create build.gradle into your source directory of Sphinx documentation.
+3. Include the following in build.gradle:
 
 ```Gradle
 buildscript {
@@ -31,6 +38,12 @@ plugins {
 }
 ```
 
+4. Run task.
+
+```sh
+gradle build
+```
+
 # Tasks
 
 This plugin adds the following tasks.
@@ -42,11 +55,7 @@ clean     | Clean built documentation directory.
 rebuild   | Clean and build documentation.
 autobuild | Run sphinx-autobuild.
 
-[Sphinx](http://sphinx-doc.org/) must be installed to run build and rebuild
-tasks.
-
-[sphinx-autobuild](https://pypi.python.org/pypi/sphinx-autobuild) must be
-installed to run autobuild tasks.
+When Sphinx or sphinx-autobuild is not installed, the tasks will be failed.
 
 Default assumes that builder is "html" and build directory is "_build".
 
@@ -64,6 +73,7 @@ sphinx {
     builder = "html"
     buildDir = "_build"
     isWarningError = true
+    configurations = [release: '1.0']
 }
 ```
 
